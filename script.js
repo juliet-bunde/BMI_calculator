@@ -7,12 +7,9 @@ function calculateBMI(){
     height = parseFloat(height);
 
     //validate the inputs
-<<<<<<< HEAD
-    if(weight<=0 || height <=0){
-=======
-    if(weight===''||height===''||weight<=0||height<=0){
->>>>>>> 74b49cfa413b50d7c03ce155d1fc730cd3cec547
-        document.getElementById('result').innerText = "Please enter a valid weight and height.";
+
+    if(!weight||!height||weight<=0||height<=0){
+        document.getElementById('result').innerText = "Enter valid weight and height.";
         return;
     }
 
@@ -34,6 +31,6 @@ function calculateBMI(){
     }
 
     //display the result
-    document.getElementById("result").innerText = `Your BMI is ${BMI}, (${category}).`;
+    document.getElementById('result').innerText = `Your BMI is ${BMI}, (${category}).`;
 
 }
