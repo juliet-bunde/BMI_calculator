@@ -7,7 +7,11 @@ function calculateBMI(){
     height = parseFloat(height);
 
     //validate the inputs
+<<<<<<< HEAD
     if(weight<=0 || height <=0){
+=======
+    if(weight===''||height===''||weight<=0||height<=0){
+>>>>>>> 74b49cfa413b50d7c03ce155d1fc730cd3cec547
         document.getElementById('result').innerText = "Please enter a valid weight and height.";
         return;
     }
